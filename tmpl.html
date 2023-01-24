@@ -1,0 +1,14 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+var pathname = "content/" + window.location.pathname + ".html";
+
+$(function(){
+    $(".article").load(pathname);
+});
+</script>
+
+<h1>Template here</h1>
+<h2>This is the template for all files with content, imagine header, social links etc</h2>
+<p>The article starts here:</p>
+<div id="article" class="article"></div>
+<p>End of artiicle</p>

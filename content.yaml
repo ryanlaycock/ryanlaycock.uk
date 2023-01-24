@@ -1,0 +1,21 @@
+# Config for all content pages in the site, hierarcy matches site tree
+title: "Website Title"
+header:
+    socials:
+        - "github.com"
+        - "facebook.com"
+        - "etc"
+
+    content:
+        - projects:
+              name: "projects"
+              siteURL: "/projects"
+              children:
+                  - rpiScreen:
+                        name: "RPi Screen"
+                        siteURL: "/projects/rpi-screen"
+                        remoteURL: "https://github.com/ryanlaycock/rpi-screen"
+                    other:
+                        name: "Other"
+                        siteURL: "/projects/other"
+                        remoteURL: "blah"
