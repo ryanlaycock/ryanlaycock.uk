@@ -1,21 +1,34 @@
 # Config for all content pages in the site, hierarcy matches site tree
 title: "Website Title"
+contentDir: "../../../../www/html/"
 header:
     socials:
         - "github.com"
         - "facebook.com"
         - "etc"
 
-    content:
-        - projects:
-              name: "projects"
-              siteURL: "/projects"
-              children:
-                  - rpiScreen:
-                        name: "RPi Screen"
-                        siteURL: "/projects/rpi-screen"
-                        remoteURL: "https://github.com/ryanlaycock/rpi-screen"
-                    other:
-                        name: "Other"
-                        siteURL: "/projects/other"
-                        remoteURL: "blah"
+content:
+        - name: "projects"
+          siteURL: "/projects"
+          showAtBase: true
+          staticURL: "static_content/projects.html"
+          children:
+                - name: "RPi Screen"
+                  siteURL: "/projects/rpi-screen"
+                  remoteURL: "ryanlaycock/rpi-screen"
+                  children:
+                        - name: "RPi Screen Clock"
+                          siteURL: "/projects/rpi-screen/clock"
+                          remoteURL: "ryanlaycock/rpi-screen"
+                          remoteSubDir: "clock"
+                - name: "Temp"
+                  siteURL: "/projects/temp"
+                  remoteURL: "ryanlaycock/open-rgb-ws2812b"
+        - name: "cooking"
+          siteURL: "/cooking"
+          showAtBase: true
+          children:
+                  - name: "Mozzy"
+                    siteURL: "/cooking/mozzy"
+                    remoteURL: "hendricius/mozzarella"
+                    
