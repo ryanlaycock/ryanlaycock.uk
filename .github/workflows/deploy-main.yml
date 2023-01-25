@@ -28,6 +28,6 @@ jobs:
         run: echo TODO Maybe build things here?
 
       # Runs a set of commands using the runners shell
-      - name: Move www/ files to nginx root
+      - name: Run generate_content.py 
         run: |
-          find www -depth -print | cpio -pvd ../../../../
+          python3 generate_content.py
