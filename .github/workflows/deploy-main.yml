@@ -27,6 +27,12 @@ jobs:
       - name: Maybe build things here?
         run: echo TODO Maybe build things here?
 
+      - name: Install Python dependencies
+        uses: py-actions/py-dependency-install@v4
+        with:
+          path: "../../requirements.txt"
+
+
       # Runs a set of commands using the runners shell
       - name: Run generate_content.py 
         run: |
