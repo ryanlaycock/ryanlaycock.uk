@@ -8,7 +8,7 @@ contentDir = ""
 
 def create_page(page):
     if "remoteURL" not in page:
-        if "staticURL" not in page:
+        if "staticURL" non page:
             print("Not generating static content for:", page["name"])
         else:
             path=contentDir+page["siteURL"]
@@ -34,6 +34,12 @@ def download_page(source, dest):
     resp = requests.get(source, headers = {"Accept": "application/vnd.github.html"})
     with open(dest, "w") as f:
         f.write(resp.text)
+
+
+def move_base_files(dest):
+    path=contentDir
+    shutil.copyfile(index.html, contentDir/index.html)
+    shutil.copyfile(tmpl.html, contentDir/tmpl.html)
 
 
 # Open the file and load the file

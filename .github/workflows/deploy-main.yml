@@ -30,18 +30,14 @@ jobs:
       # From https://github.com/dogweather/raspberry-pi-python-github-runner/blob/main/.github/workflows/python-test-in-cloud.yml
       - name: Set up Python in a virtual env
         run: |
-          if [[ `uname` != "Darwin" ]]; then sudo apt -y install python3-venv; fi
-          python3 -m venv .env
+          sudo apt -y install python3
 
       - name: Install dependencies
         run: |
-          source .env/bin/activate
           python -m pip install --upgrade pip
-          pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       # Runs a set of commands using the runners shell
       - name: Run generate_content.py 
         run: |
-          source .env/bin/activate
           python3 generate_content.py
