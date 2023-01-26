@@ -8,13 +8,13 @@ contentDir = ""
 
 def create_content_page(page):
     if "remoteURL" not in page:
-        path=contentDir+"content/"+page["siteURL"]
+        path=contentDir+"content"+page["siteURL"]
         if "staticURL" not in page:
             print("Not generating static content for:", page["name"])
         else:
             print("Moving static content:", page["name"], "at:", path, "from:", page["staticURL"])
             pathlib.Path(path).mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(page["staticURL"], contentDir+page["siteURL"]+"/index.html")
+            shutil.copyfile(page["staticURL"], path+"/index.html")
 
     else:
         source="https://api.github.com/repos/"+page["remoteURL"]+"/readme/"
