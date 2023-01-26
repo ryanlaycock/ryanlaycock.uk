@@ -36,8 +36,7 @@ def download_page(source, dest):
         f.write(resp.text)
 
 
-def move_base_files(dest):
-    path=contentDir
+def move_base_files():
     shutil.copyfile(index.html, contentDir/index.html)
     shutil.copyfile(tmpl.html, contentDir/tmpl.html)
 
@@ -55,5 +54,7 @@ print("Creating content for website:", title)
 content = data['content']
 for c in content:
     create_page(c)
+
+move_base_files():
 
 
