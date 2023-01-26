@@ -27,10 +27,10 @@ jobs:
       - name: Maybe build things here?
         run: echo TODO Maybe build things here?
 
-      - name: Install Python dependencies
+      - name: Install python
         uses: actions/setup-python@v4
-          with:
-            python-version: '3.10'
+        with:
+          python-version: '3.10'
 
       # Runs a set of commands using the runners shell
       - name: Run generate_content.py 
