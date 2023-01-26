@@ -37,8 +37,8 @@ def download_page(source, dest):
 
 
 def move_base_files():
-    shutil.copyfile(index.html, contentDir/index.html)
-    shutil.copyfile(tmpl.html, contentDir/tmpl.html)
+    shutil.copyfile("index.html", contentDir+"/index.html")
+    shutil.copyfile("tmpl.html", contentDir+"/tmpl.html")
 
 
 # Open the file and load the file
