@@ -7,8 +7,8 @@ import shutil
 contentDir = ""
 
 def create_content_page(page):
+    path=contentDir+"content"+page["siteURL"]
     if "remoteURL" not in page:
-        path=contentDir+"content"+page["siteURL"]
         if "staticURL" not in page:
             print("Not generating static content for:", page["name"])
         else:
