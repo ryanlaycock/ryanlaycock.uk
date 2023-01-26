@@ -8,7 +8,7 @@ contentDir = ""
 
 def create_page(page):
     if "remoteURL" not in page:
-        if "staticURL" non page:
+        if "staticURL" not in page:
             print("Not generating static content for:", page["name"])
         else:
             path=contentDir+page["siteURL"]
