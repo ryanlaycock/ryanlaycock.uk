@@ -55,6 +55,6 @@ content = data['content']
 for c in content:
     create_page(c)
 
-move_base_files():
+move_base_files()
 
 
