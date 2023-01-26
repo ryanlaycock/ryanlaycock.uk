@@ -43,4 +43,5 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run generate_content.py 
         run: |
+          source .env/bin/activate
           python3 generate_content.py
