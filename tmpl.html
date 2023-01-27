@@ -5,7 +5,7 @@ var pathname = "/content" + window.location.pathname + "/index.html";
 $(function(){
     let article = $(".article");
     article.load(pathname);
-    article.innerHTML().replaceAll('<a href="/', '<a href=/'+window.location.pathname+'/')
+    article.innerHTML.replaceAll('<a href="/', '<a href=/'+window.location.pathname+'/')
 });
 
 </script>
