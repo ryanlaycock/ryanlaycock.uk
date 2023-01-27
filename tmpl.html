@@ -3,8 +3,11 @@
 var pathname = "/content" + window.location.pathname + "/index.html";
 
 $(function(){
-    $(".article").load(pathname);
+    let article = $(".article");
+    article.load(pathname);
+    article.innerHTML().replaceAll('<a href="/', '<a href=/'+window.location.pathname+'/')
 });
+
 </script>
 
 <h1>Template here</h1>
