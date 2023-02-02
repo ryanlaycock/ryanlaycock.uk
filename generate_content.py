@@ -3,6 +3,7 @@ from yaml.loader import SafeLoader
 import requests
 import pathlib
 import shutil
+import os
 
 content_dir = ""
 
