@@ -1,14 +1,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-var pathname = "/content" + window.location.pathname + "/index.html";
-
-$(function(){
-    let article = $(".article");
-    article.load(pathname);
-    article.innerHTML.replaceAll('<a href="/', '<a href=/'+window.location.pathname+'/')
-});
-
-</script>
+<script src="/lib/content-loader.js"></script>
 
 <h1>Template here</h1>
 <h2>This is the template for all files with content, imagine header, social links etc</h2>

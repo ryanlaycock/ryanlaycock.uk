@@ -4,10 +4,10 @@ import requests
 import pathlib
 import shutil
 
-contentDir = ""
+content_dir = ""
 
 def create_content_page(page):
-    path=contentDir+"content"+page["siteURL"]
+    path=content_dir+"content"+page["siteURL"]
     if "remoteURL" not in page:
         if "staticURL" not in page:
             print("Not generating static content for:", page["name"])
@@ -36,8 +36,17 @@ def download_page(source, dest):
 
 
 def move_base_files():
-    shutil.copyfile("index.html", contentDir+"/index.html")
-    shutil.copyfile("tmpl.html", contentDir+"/tmpl.html")
+    shutil.copyfile("index.html", content_dir+"/index.html")
+    shutil.copyfile("tmpl.html", content_dir+"/tmpl.html")
+    shutil.copyfile("content.yaml", content_dir+"/content.yaml")
+
+    # Copy /lib
+    copy_and_overwrite("lib", content_dir+"/lib")
+
+def copy_and_overwrite(src, dst):
+    if os.path.exists(dst):
+        shutil.rmtree(dst)
+    shutil.copytree(src, dst)
 
 
 # Open the file and load the file
@@ -47,7 +56,7 @@ with open('content.yaml') as f:
 
 
 title = data['title']
-contentDir = data["contentDir"]
+content_dir = data["contentDir"]
 print("Creating content for website:", title)
 
 content = data['content']
