@@ -2,4 +2,4 @@
 
 ## Welcome to my website!
 
-![Badger](https://github.com/ryanlaycock/ryanlaycock.uk/raw/main/static_content/hello_world/badger.jpg)
+![Badger](https://raw.githubusercontent.com/ryanlaycock/ryanlaycock.uk/main/content/hello_world/badger.jpg)
