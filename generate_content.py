@@ -9,7 +9,7 @@ content_dir = ""
 
 def create_content_page(page):
     path=content_dir+"content"+page["siteURL"]
-    if "remoteURL" not in page:
+    if "githubProject" not in page:
         if "staticURL" not in page:
             print("Not generating static content for:", page["name"])
         else:
@@ -18,9 +18,7 @@ def create_content_page(page):
             shutil.copyfile(page["staticURL"], path+"/index.html")
 
     else:
-        source="https://api.github.com/repos/"+page["remoteURL"]+"/readme/"
-        if "remoteSubDir" in page:
-            source+=page["remoteSubDir"]
+        source="https://api.github.com/repos/"+page["githubProject"]+"/contents/"+page["filePath"]
         pathlib.Path(path).mkdir(parents=True, exist_ok=True)
         print("Creating page:", page["name"], "at:", path, "from:", source)
         download_page(source, path+"/index.html")
@@ -37,8 +35,8 @@ def download_page(source, dest):
 
 
 def move_base_files():
-    shutil.copyfile("index.html", content_dir+"/index.html")
-    shutil.copyfile("tmpl.html", content_dir+"/tmpl.html")
+    shutil.copyfile("static_content/index.html", content_dir+"/index.html")
+    shutil.copyfile("static_content/tmpl.html", content_dir+"/tmpl.html")
     shutil.copyfile("content.yaml", content_dir+"/content.yaml")
 
     # Copy /lib

@@ -1,5 +1,5 @@
-# Config for all content pages in the site, hierarcy matches site tree
-title: "Website Title"
+# Config for all content pages in the site
+title: "ryanlaycock"
 contentDir: "../../../../www/html/"
 header:
     socials:
@@ -8,27 +8,30 @@ header:
         - "etc"
 
 content:
-        - name: "projects"
-          siteURL: "/projects"
-          showAtBase: true
-          staticURL: "static_content/projects.html"
-          children:
-                - name: "RPi Screen"
-                  siteURL: "/projects/rpi-screen"
-                  remoteURL: "ryanlaycock/rpi-screen"
-                  children:
-                        - name: "RPi Screen Clock"
-                          siteURL: "/projects/rpi-screen/clock"
-                          remoteURL: "ryanlaycock/rpi-screen"
-                          remoteSubDir: "clock"
-                - name: "Temp"
-                  siteURL: "/projects/temp"
-                  remoteURL: "ryanlaycock/open-rgb-ws2812b"
-        - name: "cooking"
-          siteURL: "/cooking"
-          showAtBase: true
-          children:
-                  - name: "Mozzy"
-                    siteURL: "/cooking/mozzy"
-                    remoteURL: "hendricius/mozzarella"
+    - name: "projects"
+      siteURL: "/projects"
+      showAtBase: true
+      staticURL: "static_content/projects.html"
+      children:
+      - name: "RPi Screen"
+        siteURL: "/projects/rpi-screen"
+        githubProject: "ryanlaycock/rpi-screen"
+        filePath: "README.md"
+      - name: "RPi Screen Setup"
+        siteURL: "/projects/rpi-screen-setup"
+        githubProject: "ryanlaycock/rpi-screen"
+        filePath: "setup/rpisetup.md"
+      - name: "Hello World!"
+        siteURL: "/project/hello-world"
+        githubProject: "ryanlaycock/ryanlaycock.uk"
+        filePath: "content/hello_world/index.md"
+    - name: "cooking"
+      siteURL: "/cooking"
+      showAtBase: true
+      children:
+      - name: "Mozzy"
+        siteURL: "/cooking/mozzy"
+        githubProject: "hendricius/mozzarella"
+        filePath: "README.md"
                     
+
