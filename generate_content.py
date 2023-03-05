@@ -49,7 +49,7 @@ def copy_and_overwrite(src, dst):
 
 
 # Open the file and load the file
-with open('content.yaml') as f:
+with open('config.yaml') as f:
     data = yaml.load(f, Loader=SafeLoader)
     print(data)
 
