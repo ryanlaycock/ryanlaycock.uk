@@ -7,8 +7,8 @@ import os
 
 content_dir = ""
 
-def create_content_page(page):
-    path=content_dir+"content"+page["siteURL"]
+def create_content_page(siteURL, page):
+    path=content_dir+"content"+siteURL
     if "githubProject" not in page:
         if "staticURL" not in page:
             print("Not generating static content for:", page["name"])
@@ -25,7 +25,7 @@ def create_content_page(page):
 
     if "children" in page:
         for child in page["children"]:
-            create_content_page(child)
+            create_content_page(siteURL+child, page["children"][child])
 
 
 def download_page(source, dest):
@@ -60,7 +60,7 @@ print("Creating content for website:", title)
 
 content = data['content']
 for c in content:
-    create_content_page(c)
+    create_content_page(c, content[c])
 
 move_base_files()
 

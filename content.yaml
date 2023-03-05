@@ -1,37 +1,34 @@
-# Config for all content pages in the site
-title: "ryanlaycock"
-contentDir: "../../../../www/html/"
+title: ryanlaycock
+contentDir: ../../../../www/html/
 header:
-    socials:
-        - "github.com"
-        - "facebook.com"
-        - "etc"
-
+  socials:
+    - github.com
+    - facebook.com
+    - etc
 content:
-    - name: "projects"
-      siteURL: "/projects"
-      showAtBase: true
-      staticURL: "static_content/projects.html"
-      children:
-      - name: "RPi Screen"
-        siteURL: "/projects/rpi-screen"
-        githubProject: "ryanlaycock/rpi-screen"
-        filePath: "README.md"
-      - name: "RPi Screen Setup"
-        siteURL: "/projects/rpi-screen-setup"
-        githubProject: "ryanlaycock/rpi-screen"
-        filePath: "setup/rpisetup.md"
-      - name: "Hello World!"
-        siteURL: "/projects/hello-world"
-        githubProject: "ryanlaycock/ryanlaycock.uk"
-        filePath: "content/hello_world/index.md"
-    - name: "cooking"
-      siteURL: "/cooking"
-      showAtBase: true
-      children:
-      - name: "Mozzy"
-        siteURL: "/cooking/mozzy"
-        githubProject: "hendricius/mozzarella"
-        filePath: "README.md"
-                    
-
+  /projects:
+    name: projects
+    showAtBase: true
+    staticURL: static_content/projects.html
+    children:
+      /rpi-screen:
+        name: RPi Screen
+        githubProject: ryanlaycock/rpi-screen
+        filePath: README.md
+        children:
+            /rpi-screen-setup:
+                name: RPi Screen Setup
+                githubProject: ryanlaycock/rpi-screen
+                filePath: setup/rpisetup.md
+      /hello-world:
+        name: Hello World!
+        githubProject: ryanlaycock/ryanlaycock.uk
+        filePath: content/hello_world/index.md
+  /cooking:
+    name: cooking
+    showAtBase: true
+    children:
+      /mozzy:
+        name: Mozzy
+        githubProject: hendricius/mozzarella
+        filePath: README.md
