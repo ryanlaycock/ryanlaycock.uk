@@ -37,7 +37,7 @@ def download_page(source, dest):
 def move_base_files():
     shutil.copyfile("static_content/index.html", content_dir+"/index.html")
     shutil.copyfile("static_content/tmpl.html", content_dir+"/tmpl.html")
-    shutil.copyfile("content.yaml", content_dir+"/content.yaml")
+    shutil.copyfile("config.yaml", content_dir+"/config.yaml")
 
     # Copy /lib
     copy_and_overwrite("lib", content_dir+"/lib")
