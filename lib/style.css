@@ -10,29 +10,44 @@ html, body {
     font-family: 'Anonymous Pro', monospace;
     font-size: 50px;
     color: white;
-    text-align: center; /* Centered text */
     position: fixed; /* Fixed position - sit on top of the page */
     top: 0;
     display: inline-block;
 }
 
-#header h1 {
+h1 {
     margin: 0;
 }
 
-#right, #title-div {
+#title {
+    margin-top: 15px;
+}
+
+#title-div {
     height: 100%;
-    margin: auto;
-    display: inline-block;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+    position: relative;
+    width: fit-content;
 }
 
 #right {
     display: none;
+    float: right;
+    font-size: 30px;
+    height: 70px;
+    padding-top: 20px;
+    padding-right: 15px;
+}
+
+#right a {
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
 }
 
 .shrinkable {
     height: 100%;
     width: 100%;
-    transition: 0.7s;
 }
