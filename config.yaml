@@ -2,9 +2,15 @@ title: ryanlaycock
 contentDir: ../../../../www/html/
 header:
   socials:
-    - github.com
-    - facebook.com
-    - etc
+    - url: https://github.com/ryanlaycock
+      icon: fa fa-github
+    - url: https://www.linkedin.com/in/ryan-laycock-038489183
+      icon: fa fa-linkedin
+    - url: https://twitter.com/mynameisryan98
+      icon: fa fa-twitter
+    - url: https://www.instagram.com/mynameisryan98/
+      icon: fa fa-instagram
+
 content:
   /projects:
     name: Projects
