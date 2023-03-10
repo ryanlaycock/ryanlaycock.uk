@@ -3,15 +3,17 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #F5F5F5;
+/*    background: #F5F5F5;*/
+    background: #000000;
 }
 
 #header {
-    background-color: #050808;
-    font-family: 'Share Tech Mono', monospace;
+/*    background-color: #050808;*/
+/*    font-family: 'Share Tech Mono', monospace;*/
+    font-family: 'Anonymous Pro';
     font-size: 60px;
-    color: #F5F5F5;
-    position: fixed; /* Fixed position - sit on top of the page */
+    color: #EEEEEE;
+    position: fixed;
     top: 0;
     display: inline-block;
     width: 100%;
@@ -26,6 +28,7 @@ html, body {
 
 h1 {
     margin: 0;
+    font-weight: 700;
 }
 
 #title {
@@ -47,12 +50,6 @@ h1 {
     position: absolute;
 }
 
-#bottom {
-    bottom: 30px;
-    width: 100%;
-    position: absolute;
-}
-
 #social{
     margin-left: auto;
     margin-right: auto;
@@ -63,6 +60,7 @@ h1 {
 #links {
     display: none;
     font-size: 23px;
+    font-weight: bold;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -84,7 +82,7 @@ h1 {
 }
 
 #header a:hover{
-    color: red;
+    color: #CF0A0A;
 }
 
 .shrinkable {
@@ -98,4 +96,33 @@ h1 {
     margin-right: auto;
     border-radius: 10px;
     padding: 10px;
+    min-height: calc(100% - 160px);
+}
+
+#footer {
+    background-color: #F5F5F5;
+    height: 70px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#footer-content {
+    height: 100%;
+    width: 1200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Anonymous Pro';
+}
+
+#footer-content a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer-content h4 {
+    margin: 0px;
 }
