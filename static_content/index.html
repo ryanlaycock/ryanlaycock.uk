@@ -4,7 +4,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <script src="/lib/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="/lib/style.css">
     <!--FOR TESTING ONLY-->
     <script src="../lib/index.js"></script>
@@ -15,8 +19,32 @@
 </head>
 <body>
 <div id="header" class="shrinkable">
-    <div id="title-div"><h1 id="title"></h1></div>
-    <div id="right"><a href="/projects">Projects</a></div>
+    <div id="header-content">
+        <div id="left">
+            <h1 id="title"></h1>
+            <div id="links">
+                <a href="/projects">Projects</a>
+                <a href="/cooking">Cooking</a>
+            </div>
+        </div>
+        <div id="right">
+            <div id="social">
+                <a href="https://github.com/ryanlaycock">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ryan-laycock-038489183">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div id="bottom">
+            <div id="down-arrow" onclick=scrollFunction()>
+                <a>
+                    <i class="fa fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="shrinkable"></div>
 <div id="content">

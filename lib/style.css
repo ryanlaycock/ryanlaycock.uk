@@ -3,16 +3,25 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background: #F5F5F5;
 }
 
 #header {
-    background-color: black;
-    font-family: 'Anonymous Pro', monospace;
-    font-size: 50px;
-    color: white;
+    background-color: #050808;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 60px;
+    color: #F5F5F5;
     position: fixed; /* Fixed position - sit on top of the page */
     top: 0;
     display: inline-block;
+    width: 100%;
+}
+
+#header-content {
+    height: 100%;
+    margin: auto;
+    max-width: 1200px;
+    position: relative;
 }
 
 h1 {
@@ -20,34 +29,71 @@ h1 {
 }
 
 #title {
-    margin-top: 15px;
-}
-
-#title-div {
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    top: 30%;
-    position: relative;
     width: fit-content;
+    font-family: 'Anonymous Pro';
+}
+
+#left {
+    top: 25%;
+    width: 100%;
+    position: absolute;
 }
 
 #right {
-    display: none;
-    float: right;
-    font-size: 30px;
-    height: 70px;
-    padding-top: 20px;
-    padding-right: 15px;
+    top: 60%;
+    width: 100%;
+    position: absolute;
 }
 
-#right a {
+#bottom {
+    bottom: 30px;
+    width: 100%;
+    position: absolute;
+}
+
+#social{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-size: 80px;
+}
+
+#links {
+    display: none;
+    font-size: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+#down-arrow{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-size: 80px;
+}
+
+#header a {
     text-decoration: none;
     color: white;
-    margin-top: 15px;
+}
+
+#header a:hover{
+    color: red;
 }
 
 .shrinkable {
     height: 100%;
     width: 100%;
+}
+
+#content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 10px;
 }
