@@ -10,11 +10,15 @@ header:
       icon: fa fa-twitter
     - url: https://www.instagram.com/mynameisryan98/
       icon: fa fa-instagram
+  links:
+    - url: /projects
+      name: Projects
+    - url: /cooking
+      name: Cooking
 
 content:
   /projects:
     name: Projects
-    showInHeader: true
     staticURL: static_content/projects.html
     children:
       /rpi-screen:
@@ -32,7 +36,6 @@ content:
         filePath: content/hello_world/index.md
   /cooking:
     name: Cooking
-    showInHeader: true
     children:
       /mozzy:
         name: Mozzy
