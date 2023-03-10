@@ -79,6 +79,8 @@ h1 {
 #header a {
     text-decoration: none;
     color: white;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #header a:hover{
