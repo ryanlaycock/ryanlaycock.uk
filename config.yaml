@@ -21,6 +21,11 @@ content:
     name: ryanlaycock.uk
     githubProject: ryanlaycock/ryanlaycock.uk
     filePath: content/home/index.md
+    pinnedPosts:
+      - /hello-world
+      - /rpi-screen
+      - /rpi-screen-setup
+      - /mozzy
   /projects:
     name: Projects
     staticURL: static_content/projects.html
