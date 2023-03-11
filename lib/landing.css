@@ -1,20 +1,30 @@
+#header {
+    font-size: 60px;
+    height: 100%;
+}
+
 #title {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-    font-family: 'Anonymous Pro';
+    float: none;
+    font-size: 2em;
 }
 
 #left {
     top: 25%;
     width: 100%;
     position: absolute;
+    margin-left: 0px;
 }
 
 #right {
     top: 60%;
     width: 100%;
     position: absolute;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #bottom {
@@ -25,6 +35,8 @@
 
 #social{
     margin-right: auto;
+    font-size: 80px;
+    width: fit-content;
 }
 
 #links {
