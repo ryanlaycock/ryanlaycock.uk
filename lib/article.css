@@ -15,8 +15,9 @@
 #article h6 {
     font-family: 'Anonymous Pro', monospace;
     text-decoration: underline;
-    -webkit-text-decoration-color: #CF0A0A; /* Safari */
-    text-decoration-color: #CF0A0A;
+    -webkit-text-decoration-color: #811331; /* Safari */
+    text-decoration-color: #811331;
+    word-spacing: -5px;
 }
 
 #article h1 {

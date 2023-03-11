@@ -3,8 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-/*    background: #F5F5F5;*/
-    background: #000000;
+    background: #0d0d0d;
 }
 
 #header {
@@ -18,7 +17,7 @@ html, body {
     display: inline-block;
     width: 100%;
     height: 70px;
-    background-color: black;
+    background-color: #0d0d0d;
 }
 
 #header-content {
@@ -93,7 +92,8 @@ h1 {
 }
 
 #header a:hover{
-    color: #CF0A0A;
+/*    color: #CF0A0A;*/
+    color: #811331;
 }
 
 #content {
