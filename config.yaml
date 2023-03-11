@@ -40,9 +40,9 @@ content:
         filePath: content/hello_world/index.md
         children:
           /example:
-            name: example
+            name: Example
             githubProject: ryanlaycock/ryanlaycock.uk
-            filePath: content/hello_world/home/index.md
+            filePath: content/hello_world/example/index.md
   /cooking:
     name: Cooking
     children:
