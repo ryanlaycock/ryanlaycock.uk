@@ -32,13 +32,12 @@ h1 {
     font-weight: 700;
 }
 
-#title {
+#header-title, #header-title-prefix {
     font-size: 35px;
     height: fit-content;
     float: left;
     margin-left: 0px;
     margin-right: 0px;
-    width: 260px;
     font-family: 'Anonymous Pro';
 }
 
@@ -131,4 +130,8 @@ h1 {
 
 #footer-content h4 {
     margin: 0px;
+}
+
+.shrinkable {
+    height: 70px;
 }

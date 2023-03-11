@@ -3,7 +3,7 @@
     height: 100%;
 }
 
-#title {
+#header-title {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
@@ -19,12 +19,16 @@
 }
 
 #right {
-    top: 60%;
+    top: calc(25% + 200px);
     width: 100%;
     position: absolute;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#header-title-div {
+    width: 100%;
 }
 
 #bottom {
