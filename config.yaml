@@ -17,6 +17,10 @@ header:
       name: Cooking
 
 content:
+  /:
+    name: ryanlaycock.uk
+    githubProject: ryanlaycock/ryanlaycock.uk
+    filePath: content/home/index.md
   /projects:
     name: Projects
     staticURL: static_content/projects.html
