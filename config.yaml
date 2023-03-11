@@ -22,10 +22,10 @@ content:
     githubProject: ryanlaycock/ryanlaycock.uk
     filePath: content/home/index.md
     pinnedPosts:
-      - /hello-world
-      - /rpi-screen
-      - /rpi-screen-setup
-      - /mozzy
+      - /projects/hello-world
+      - /projects/rpi-screen
+      - /projects/rpi-screen/rpi-screen-setup
+      - /cooking/mozzy
   /projects:
     name: Projects
     staticURL: static_content/projects.html
@@ -34,20 +34,27 @@ content:
         name: RPi Screen
         githubProject: ryanlaycock/rpi-screen
         filePath: README.md
+        description: Turning a 16x16 RGB matrix into a PC monitor
+        date: 2021-01-01
         children:
             /rpi-screen-setup:
                 name: RPi Screen Setup
                 githubProject: ryanlaycock/rpi-screen
                 filePath: setup/rpisetup.md
+                description: Setting up the rpi-screen.
+                date: 2021-01-01
       /hello-world:
-        name: Hello World!
+        name: Hello World! 👋
         githubProject: ryanlaycock/ryanlaycock.uk
         filePath: content/hello_world/index.md
+        description: Hello world! 👋 My first post here, and what better to write about than making this website itself.
+        date: 2023-03-11
         children:
           /example:
             name: Example
             githubProject: ryanlaycock/ryanlaycock.uk
             filePath: content/hello_world/example/index.md
+            date: 2021-01-01
   /cooking:
     name: Cooking
     children:
@@ -55,3 +62,5 @@ content:
         name: Mozzy
         githubProject: hendricius/mozzarella
         filePath: README.md
+        description: Some radomm website for making mozzarella lol
+        date: 2021-01-01
