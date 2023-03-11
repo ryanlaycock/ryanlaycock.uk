@@ -38,6 +38,11 @@ content:
         name: Hello World!
         githubProject: ryanlaycock/ryanlaycock.uk
         filePath: content/hello_world/index.md
+        children:
+          /example:
+            name: example
+            githubProject: ryanlaycock/ryanlaycock.uk
+            filePath: content/hello_world/home/index.md
   /cooking:
     name: Cooking
     children:
