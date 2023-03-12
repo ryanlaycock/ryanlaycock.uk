@@ -4,6 +4,7 @@
 
 #content {
     padding: 10px;
+    padding-top: 40px;
 }
 
 .octicon-link {
@@ -53,13 +54,17 @@
 #content img {
     display: block;
     margin: 0 auto;
+    border-radius: 5px;
+    border-bottom: 5px #811331 solid;
 }
 
-#pinned-posts {
+#pinned-posts,
+#child-posts {
     margin-top: 50px;
 }
 
-#pinned-posts-flex {
+#pinned-posts-flex,
+#child-posts-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -68,20 +73,23 @@
     margin-top: 10px;
 }
 
-.pinned-post-card {
+.pinned-post-card,
+.child-posts-flex {
     width: 320px;
     border-bottom: 5px #811331 solid;
     position: relative;
     margin: 5px;
 }
 
-#pinned-posts-flex h4 {
+#pinned-posts-flex h4,
+#child-posts-flex h4 {
     text-decoration: none;
     margin: 5px;
     color: #EEEEEE;
 }
 
-#pinned-posts-flex p {
+#pinned-posts-flex p,
+#child-posts-flex p {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     color: #C1C1C1;
@@ -89,7 +97,8 @@
     margin-bottom: 35px;
 }
 
-#pinned-posts-flex .date {
+#pinned-posts-flex .date,
+#child-posts-flex .date {
     text-align: right;
     position: absolute;
     bottom: 0;
@@ -98,7 +107,8 @@
     color: #EEEEEE;
 }
 
-#pinned-posts-flex a {
+#pinned-posts-flex a,
+#child-posts-flex a {
     text-decoration: none;
     color: #C1C1C1;
     display: flex;
@@ -107,6 +117,7 @@
     transition: top ease 0.5s;
 }
 
-#pinned-posts-flex a:hover {
+#pinned-posts-flex a:hover,
+#child-posts-flex a:hover {
     top: -5px;
 }

@@ -21,6 +21,7 @@ content:
     name: ryanlaycock.uk
     githubProject: ryanlaycock/ryanlaycock.uk
     filePath: content/home/index.md
+    pinnedPostsHeader: Pinned Posts
     pinnedPosts:
       - /projects/hello-world
       - /projects/rpi-screen
@@ -28,7 +29,7 @@ content:
       - /cooking/mozzy
   /projects:
     name: Projects
-    staticURL: static_content/projects.html
+    childrenHeader: Projects
     children:
       /rpi-screen:
         name: RPi Screen
@@ -36,6 +37,7 @@ content:
         filePath: README.md
         description: Turning a 16x16 RGB matrix into a PC monitor
         date: "2021-01-01"
+        displayChildren: true
         children:
             /rpi-screen-setup:
                 name: RPi Screen Setup
@@ -57,6 +59,7 @@ content:
             date: "2021-01-01"
   /cooking:
     name: Cooking
+    childrenHeader: Cooking Recipes
     children:
       /mozzy:
         name: Mozzy
