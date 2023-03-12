@@ -39,6 +39,7 @@ h1 {
     margin-left: 0px;
     margin-right: 0px;
     font-family: 'Anonymous Pro';
+    text-align: center;
 }
 
 #left {
@@ -64,6 +65,7 @@ h1 {
     width: fit-content;
     height: fit-content;
     font-size: 35px;
+    text-align: center;
 }
 
 #links {
@@ -135,4 +137,13 @@ h1 {
 
 .shrinkable {
     height: 70px;
+}
+
+@media screen and (max-width: 900px) {
+    #header-title {
+        font-size: 20vw;
+    }
+    #left {
+        top: 15%;
+    }
 }
