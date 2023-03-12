@@ -74,7 +74,7 @@
 }
 
 .pinned-post-card,
-.child-posts-flex {
+.child-post-card {
     width: 320px;
     border-bottom: 5px #811331 solid;
     position: relative;
