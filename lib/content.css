@@ -1,0 +1,112 @@
+#content {
+    color: #EEEEEE;
+}
+
+#content {
+    padding: 10px;
+}
+
+.octicon-link {
+    display: none;
+}
+
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    font-family: 'Anonymous Pro', monospace;
+/*    text-decoration: underline;*/
+    -webkit-text-decoration-color: #811331; /* Safari */
+    text-decoration-color: #811331;
+    word-spacing: -5px;
+}
+
+#content h1 {
+    font-size: 50px;
+}
+#content h2 {
+    font-size: 45px;
+}
+#content h3 {
+    font-size: 40px;
+}
+#content h4 {
+    font-size: 35px;
+}
+#content h5 {
+    font-size: 30px;
+}
+#content h6 {
+    font-size: 25px;
+}
+
+#article p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #C1C1C1;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#content img {
+    display: block;
+    margin: 0 auto;
+}
+
+#pinned-posts {
+    margin-top: 50px;
+}
+
+#pinned-posts-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: 10px;
+}
+
+.pinned-post-card {
+    width: 320px;
+    border-bottom: 5px #811331 solid;
+    position: relative;
+    margin: 5px;
+}
+
+#pinned-posts-flex h4 {
+    text-decoration: none;
+    margin: 5px;
+    color: #EEEEEE;
+}
+
+#pinned-posts-flex p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #C1C1C1;
+    padding: 5px;
+    margin-bottom: 35px;
+}
+
+#pinned-posts-flex .date {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0px;
+    color: #EEEEEE;
+}
+
+#pinned-posts-flex a {
+    text-decoration: none;
+    color: #C1C1C1;
+    display: flex;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+#pinned-posts-flex a:hover {
+    top: -5px;
+}
