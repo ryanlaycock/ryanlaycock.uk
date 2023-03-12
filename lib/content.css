@@ -4,7 +4,6 @@
 
 #content {
     padding: 10px;
-    padding-top: 40px;
 }
 
 .octicon-link {
@@ -63,6 +62,11 @@
     margin-top: 50px;
 }
 
+#article {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 #pinned-posts-flex,
 #child-posts-flex {
     display: flex;
@@ -71,6 +75,8 @@
     align-items: stretch;
     align-content: stretch;
     margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .pinned-post-card,
