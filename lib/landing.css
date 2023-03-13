@@ -49,6 +49,8 @@
     margin-right: auto;
     font-size: 80px;
     width: fit-content;
+    display: block;
+
 }
 
 #links {

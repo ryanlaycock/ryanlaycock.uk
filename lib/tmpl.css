@@ -45,7 +45,7 @@ h1 {
 #left {
     top: 18px;
     left: 0px;
-    width: 900px;
+    width: 100%;
     margin-left: 40px;
     position: absolute;
 }
@@ -89,6 +89,7 @@ h1 {
 
 #menu-toggle {
     font-size: 30px;
+    margin-top: 5px;
 }
 
 #down-arrow{
@@ -153,87 +154,4 @@ h1 {
 
 #menu-toggle {
     display: none;
-}
-
-.header-link-div {
-
-}
-
-@media screen and (max-width: 1000px) {
-    /* Default values when small  */
-    #links {
-        display: none;
-    }
-
-    #social {
-        display: none;
-    }
-
-    #right {
-        bottom: 20px;
-        top: unset;
-        max-width: unset;
-        width: 100%;
-        text-align: center;
-        margin-right: 0px;
-    }
-
-    #social {
-        margin: auto;
-        width: fit-content;
-    }
-
-    #menu-toggle {
-        display: block;
-    }
-
-    #left {
-        margin-left: 0px;
-        width: 100%;
-    }
-
-    #links {
-        float: none;
-        text-align: left;
-    }
-
-    #menu-toggle {
-        top: 12px;
-        margin-right: 10px;
-    }
-
-    .header-link-div {
-        padding-left: 10px;
-    }
-
-    :not(#title-div).header-link-div {
-        text-align: center;
-        font-size: 40px;
-        margin-top: 20px;
-    }
-
-    /* Values when menu bar open*/
-    #header.responsive #social {
-        display: block;
-    }
-
-    #header.responsive {
-        height: 100%;
-    }
-
-     #header.responsive #links {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-     #header.responsive #links.a {
-        width: 100%;
-    }
-
-     #header.responsive #header-link-div {
-        width: fit-content;
-        margin: auto;
-    }
 }
