@@ -43,15 +43,16 @@ h1 {
 }
 
 #left {
-    top: 25%;
+    top: 18px;
     left: 0px;
     width: 900px;
     margin-left: 40px;
     position: absolute;
 }
 
-#right {
-    top: 25%;
+#right,
+#menu-toggle {
+    top: 18px;
     width: 250px;
     max-width: fit-content;
     right: 0px;
@@ -59,7 +60,8 @@ h1 {
     position: absolute;
 }
 
-#social{
+#social,
+#menu-toggle {
     margin-left: auto;
     margin-right: 0px;
     width: fit-content;
@@ -68,7 +70,8 @@ h1 {
     text-align: center;
 }
 
-#links {
+#links,
+#menu-toggle {
     display: inline-block;
     font-size: 23px;
     font-weight: bold;
@@ -77,6 +80,15 @@ h1 {
     margin-top: 10px;
     width: fit-content;
     float: left;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu-toggle {
+    font-size: 30px;
 }
 
 #down-arrow{
@@ -137,4 +149,67 @@ h1 {
 
 .shrinkable {
     height: 70px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.header-link-div {
+
+}
+
+@media screen and (max-width: 1000px) {
+    #links {
+        display: none;
+    }
+
+    #links.responsive {
+        display: block;
+    }
+
+    #social {
+        display: none;
+    }
+
+    #social.responsive {
+        display: block;
+    }
+
+    #right {
+        bottom: 20px;
+        top: unset;
+        max-width: unset;
+        width: 100%;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    #social {
+        margin: auto;
+        width: fit-content;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #left {
+        margin-left: 10px;
+    }
+
+    #links {
+        float: none;
+        text-align: left;
+    }
+
+    #menu-toggle {
+        top: 12px;
+        margin-right: 10px;
+    }
+
+    #header.responsive {
+        height: 100%;
+        transition: height 0.25s;
+    }
 }
