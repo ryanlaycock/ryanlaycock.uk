@@ -24,7 +24,7 @@ content:
     pinnedPostsHeader: Pinned Posts
     pinnedPosts:
       - /projects/hello-world
-      - /project/software-network-analysis
+      - /projects/software-network-analysis
       - /projects/sot-cooking-timer
       - /projects/rpi-screen
       - /projects/minecraft-discord-bot
